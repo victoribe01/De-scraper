@@ -7,14 +7,17 @@
                                  
                                               DE-SCRAPER
                                       Author: ibe Victor @victoribe
+<p align="center"><a target="_blank" href="https://x.com/OluwaData"><img src="https://img.shields.io/twitter/follow/OluwaData.svg?logo=twitter"></a></p>
 De-scraper is a python tool that crawl any url with with the keyword you input, this tool helps penetration testers and bug bounty hunters find links in  the html of the url.
 
 # Usage
-
-$ sudo cd De-scraper
-
-$ sudo python De-scraper.py
-
+```
+$ git clone 
+$ pip install -r requirements.txt (or pip3 install -r requirements.txt if you're using Python3)
+```
+```
+$ python De-scraper.py 
+```
 Enter the URL you would like to scrape: https://example.com
 
 Enter the keyword you want to search for: privacy

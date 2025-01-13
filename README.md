@@ -12,7 +12,7 @@ De-scraper is a python tool that crawl any url with with the keyword you input, 
 
 # Usage
 ```
-$ git clone 
+$ git clone https://github.com/victoribe01/De-scraper.git
 $ pip install -r requirements.txt (or pip3 install -r requirements.txt if you're using Python3)
 ```
 ```

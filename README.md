@@ -1,11 +1,9 @@
 # De-scraper
 De-scraper is a python tool that crawl any url with with the keyword you input, this tool helps penetration testers and bug bounty hunters find links in  the html of the url.
 
-How the tool works
-
-sudo cd De-scraper
-
-sudo python De-scraper.py
+##Usage
+$ sudo cd De-scraper
+$ sudo python De-scraper.py
 
 Enter the URL you would like to scrape: https://example.com
 

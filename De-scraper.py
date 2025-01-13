@@ -1,15 +1,4 @@
-#!/bin/python
-
-#Enter the URL you would like to scrape: https://example.com
-#Enter the keyword you want to search for: privacy
-#Enter the crawling depth (e.g., 2): 2
-
-#Starting crawl...
-
-#Keyword 'privacy' found at: https://example.com/privacy-policy
-#Keyword in URL: https://example.com/privacy-policy
-#Found URL: https://example.com/terms
-#Found URL: https://example.com/contact
+#!/usr/bin/python
 
 # Helps in printing my the banner
 def banner():
@@ -33,7 +22,6 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 from termcolor import colored
 
-# 
 visited_urls = set()
 
 def spider_urls(url, keyword, depth=2, current_depth=0):
@@ -67,7 +55,8 @@ def spider_urls(url, keyword, depth=2, current_depth=0):
         for tag in soup.find_all("a", href=True):
             href = tag.get("href")
             full_url = urljoin(url, href)
-            # Normalize and filter URLs
+           
+	    # Normalize and filter URLs
             if full_url.startswith("http") and full_url not in visited_urls:
                 if keyword.lower() in full_url.lower():
                     print(f"Keyword in URL: {full_url}")
